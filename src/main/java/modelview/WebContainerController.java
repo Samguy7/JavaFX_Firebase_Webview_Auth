@@ -23,6 +23,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.concurrent.Worker.State;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import netscape.javascript.JSObject;
 import org.w3c.dom.Document;
@@ -80,8 +81,11 @@ public class WebContainerController implements Initializable {
     @FXML
     WebView webView;
     private WebEngine webEngine;
-
     @FXML
+    private Button btn2;
+    @FXML
+    private Button btn;
+
     private void goAction(ActionEvent evt) {
         webEngine.load("http://google.com");
     }
