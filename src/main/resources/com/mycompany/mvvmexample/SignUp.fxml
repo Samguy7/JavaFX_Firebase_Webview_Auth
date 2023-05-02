@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mvvmexample.SignUpController">
+   <children>
+      <TextField fx:id="Email" layoutX="351.0" layoutY="253.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <PasswordField fx:id="Password" layoutX="357.0" layoutY="186.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></PasswordField>
+      <AnchorPane prefHeight="152.0" prefWidth="601.0" style="-fx-background-color: #0598ff;">
+         <children>
+            <Text fill="#fffafa" layoutX="111.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebView Sign Up">
+               <font>
+                  <Font name="Arial" size="40.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button layoutX="223.0" layoutY="314.0" mnemonicParsing="false" onAction="#switchToSecondary" onMouseClicked="#registerUser" prefHeight="30.0" prefWidth="112.0" style="-fx-background-color: #0598ff;" text="Login">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></Button>
+      <TextField fx:id="Name" layoutX="46.0" layoutY="186.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="Phone" layoutX="46.0" layoutY="253.0" promptText="Phone" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
