@@ -52,6 +52,10 @@ public class AccessFBView {
      private boolean key;
     private ObservableList<Person> listOfUsers = FXCollections.observableArrayList();
     private Person person;
+    @FXML
+    private Button regButton;
+    @FXML
+    private Button switchroot;
     public ObservableList<Person> getListOfUsers() {
         return listOfUsers;
     }
