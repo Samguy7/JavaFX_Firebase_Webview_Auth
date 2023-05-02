@@ -6,26 +6,36 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelview.WebContainerController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="modelview.WebContainerController">
        <children>
       <HBox prefHeight="30.0" prefWidth="600.0">
          <children>
-            <Label fx:id="label" text="Label">
+            <Label fx:id="label" style="-fx-background-color: #0598ff;" text="Label">
                <HBox.margin>
                   <Insets right="50.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
             </Label>
-            <Button fx:id="btn2" onAction="#setLabel" text="change html">
+            <Button fx:id="btn2" onAction="#setLabel" style="-fx-background-color: #0598ff;" text="change html">
                <HBox.margin>
                   <Insets right="20.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
             </Button>
-            <Button fx:id="btn" onAction="#swithcBackStage" text="Go Back">
+            <Button fx:id="btn" onAction="#swithcBackStage" style="-fx-background-color: #0598ff;" text="Go Back">
                <HBox.margin>
                   <Insets right="20.0" />
                </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
             </Button>
          </children>
       </HBox>
@@ -34,7 +44,7 @@
                 <WebView fx:id="webView" minHeight="800.0" minWidth="600.0" prefHeight="800.0" prefWidth="600.0" />
             </center>
             <top>
-                <HBox prefHeight="27.0" prefWidth="431.0" />
+                <HBox prefHeight="27.0" prefWidth="431.0" style="-fx-background-color: #0598ff;" />
             </top>
         </BorderPane>
     </children>
